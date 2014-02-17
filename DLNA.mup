@@ -32,7 +32,7 @@
               "id": 41,
               "ideas": {
                 "1": {
-                  "title": "LPCM (2 channel) for HND;",
+                  "title": "LPCM (2 channel) for HND",
                   "id": 74,
                   "ideas": {
                     "1": {
@@ -46,7 +46,7 @@
                   "id": 75,
                   "ideas": {
                     "1": {
-                      "title": "MPEG4 (HE AAC, AAC LTP, BSAC), AMR, ATRAC3plus, G.726, WMA, LPCM",
+                      "title": "optional: MPEG4 (HE AAC, AAC LTP, BSAC), AMR, ATRAC3plus, G.726, WMA, LPCM",
                       "id": 81
                     }
                   }
@@ -172,7 +172,11 @@
                   "title": "Network Service Discovery API",
                   "id": 70,
                   "ideas": {
-                    "1": {
+                    "2": {
+                      "title": "Bug 914579 https://bugzilla.mozilla.org/show_bug.cgi?id=914579",
+                      "id": 83
+                    },
+                    "12": {
                       "title": "Several UPnP profile has implemented in JS https://github.com/richtr/plug.play.js/",
                       "id": 71
                     }
