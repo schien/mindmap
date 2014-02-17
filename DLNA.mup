@@ -1,0 +1,458 @@
+{
+  "title": "DLNA",
+  "id": 1,
+  "formatVersion": 2,
+  "ideas": {
+    "1": {
+      "title": "architecture",
+      "id": 36,
+      "ideas": {
+        "1": {
+          "title": "formats",
+          "id": 37,
+          "ideas": {
+            "1": {
+              "title": "image",
+              "id": 40,
+              "ideas": {
+                "1": {
+                  "title": "JPEG",
+                  "id": 73,
+                  "ideas": {
+                    "1": {
+                      "title": "optional: GIF, TIFF, PNG",
+                      "id": 78
+                    }
+                  }
+                }
+              }
+            },
+            "2": {
+              "title": "audio",
+              "id": 41,
+              "ideas": {
+                "1": {
+                  "title": "LPCM (2 channel) for HND;",
+                  "id": 74,
+                  "ideas": {
+                    "1": {
+                      "title": "optional: MP3, WMA9, AC-3, AAC, ATRAC3plus",
+                      "id": 79
+                    }
+                  }
+                },
+                "2": {
+                  "title": "MP3 and MPEG4 AAC LC for MHD",
+                  "id": 75,
+                  "ideas": {
+                    "1": {
+                      "title": "MPEG4 (HE AAC, AAC LTP, BSAC), AMR, ATRAC3plus, G.726, WMA, LPCM",
+                      "id": 81
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "video",
+              "id": 42,
+              "ideas": {
+                "1": {
+                  "title": "MPEG2 for HND",
+                  "id": 76,
+                  "ideas": {
+                    "1": {
+                      "title": "optional: MPEG1, MPEG4, WMV9",
+                      "id": 80
+                    }
+                  }
+                },
+                "2": {
+                  "title": "MPEG4 AVC (AAC LC Assoc Audio) for MHD",
+                  "id": 77,
+                  "ideas": {
+                    "1": {
+                      "title": "optional: VC1, H.263, MPEG4 part 2, MPEG2, MPEG4 AVC (BSAC or other for Assoc. Audio)",
+                      "id": 82
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "media transport",
+          "id": 38,
+          "ideas": {
+            "1": {
+              "title": "HTTP 1.1",
+              "id": 43
+            },
+            "2": {
+              "title": "RTP",
+              "id": 44
+            }
+          }
+        },
+        "3": {
+          "title": "media management",
+          "id": 39,
+          "ideas": {
+            "1": {
+              "title": "UPnP AV",
+              "id": 45,
+              "ideas": {
+                "1": {
+                  "title": "content directory service",
+                  "id": 58,
+                  "ideas": {
+                    "1": {
+                      "title": "enumerate available contents",
+                      "id": 63
+                    }
+                  }
+                },
+                "2": {
+                  "title": "connection management service",
+                  "id": 59,
+                  "ideas": {}
+                },
+                "3": {
+                  "title": "AV transport service",
+                  "id": 60,
+                  "ideas": {
+                    "1": {
+                      "title": "play, stop, pause, and seek",
+                      "id": 65
+                    }
+                  }
+                },
+                "4": {
+                  "title": "rendering control service",
+                  "id": 61,
+                  "ideas": {
+                    "1": {
+                      "title": "volume, mute, and brightness",
+                      "id": 67
+                    }
+                  }
+                },
+                "5": {
+                  "title": "scheduled recording service",
+                  "id": 62,
+                  "ideas": {
+                    "1": {
+                      "title": "content recording event",
+                      "id": 68
+                    },
+                    "2": {
+                      "title": "interact with content directory service",
+                      "id": 69
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "4": {
+          "title": "network stack",
+          "id": 46,
+          "ideas": {
+            "1": {
+              "title": "based on UPnP and TCP/IP",
+              "id": 47
+            },
+            "2": {
+              "title": "discovery via HTTP Multicast over UDP",
+              "id": 48,
+              "ideas": {
+                "1": {
+                  "title": "Network Service Discovery API",
+                  "id": 70,
+                  "ideas": {
+                    "1": {
+                      "title": "Several UPnP profile has implemented in JS https://github.com/richtr/plug.play.js/",
+                      "id": 71
+                    }
+                  }
+                }
+              }
+            },
+            "3": {
+              "title": "definition, control, and eventing via HTTP over TCP",
+              "id": 49,
+              "ideas": {}
+            },
+            "4": {
+              "title": "DHCP or Auto-IP for obtaining IP address",
+              "id": 50
+            },
+            "5": {
+              "title": "content transmission via DTCP-IP",
+              "id": 57
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "certification",
+      "id": 51,
+      "ideas": {
+        "1": {
+          "title": "CTT test - conformance test tool",
+          "id": 52
+        },
+        "2": {
+          "title": "ICV test - independent certification vendor, approved by DLNA",
+          "id": 53,
+          "ideas": {
+            "1": {
+              "title": "test against 3 reference devices",
+              "id": 55
+            }
+          }
+        }
+      }
+    },
+    "-2": {
+      "title": "device category",
+      "id": 35,
+      "ideas": {
+        "1": {
+          "title": "MHD - mobile handheld device",
+          "id": 4,
+          "ideas": {
+            "1": {
+              "title": "Server",
+              "id": 18,
+              "ideas": {
+                "1": {
+                  "title": "provide content",
+                  "id": 23
+                }
+              }
+            },
+            "2": {
+              "title": "Player",
+              "id": 19,
+              "ideas": {
+                "2": {
+                  "title": "play content from server",
+                  "id": 25
+                },
+                "3": {
+                  "title": "find content on server",
+                  "id": 24,
+                  "attr": {
+                    "style": {
+                      "background": "#E0E0E0"
+                    }
+                  },
+                  "ideas": {}
+                }
+              }
+            },
+            "3": {
+              "title": "Controller",
+              "id": 20,
+              "ideas": {},
+              "attr": {
+                "style": {
+                  "background": "#E0E0E0"
+                }
+              }
+            },
+            "4": {
+              "title": "Downloader",
+              "id": 21,
+              "ideas": {
+                "1": {
+                  "title": "download content from server",
+                  "id": 28
+                }
+              }
+            },
+            "5": {
+              "title": "Uploader",
+              "id": 22,
+              "ideas": {
+                "1": {
+                  "title": "upload content to server",
+                  "id": 27
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#E0E0E0"
+            }
+          }
+        },
+        "2": {
+          "title": "HND - home network device",
+          "id": 3,
+          "ideas": {
+            "1": {
+              "title": "Server",
+              "id": 9,
+              "ideas": {
+                "1": {
+                  "title": "provide content",
+                  "id": 14
+                }
+              }
+            },
+            "2": {
+              "title": "Player",
+              "id": 10,
+              "ideas": {
+                "1": {
+                  "title": "render content from server",
+                  "id": 16,
+                  "ideas": {},
+                  "attr": {
+                    "style": {
+                      "background": "#E0E0E0"
+                    }
+                  }
+                },
+                "2": {
+                  "title": "find content on server",
+                  "id": 17,
+                  "attr": {
+                    "style": {
+                      "background": "#E0E0E0"
+                    }
+                  }
+                }
+              },
+              "attr": {
+                "style": {
+                  "background": "#E0E0E0"
+                }
+              }
+            },
+            "3": {
+              "title": "Renderer",
+              "id": 11,
+              "ideas": {}
+            },
+            "4": {
+              "title": "Controller",
+              "id": 12,
+              "ideas": {}
+            },
+            "5": {
+              "title": "Printer",
+              "id": 13,
+              "ideas": {
+                "1": {
+                  "title": "provide printing service",
+                  "id": 72
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#E0E0E0"
+            }
+          }
+        },
+        "3": {
+          "title": "HID - home infrastructure device",
+          "id": 29,
+          "ideas": {
+            "1": {
+              "title": "Connectivity Function",
+              "id": 30,
+              "ideas": {
+                "1": {
+                  "title": "connect device between MHD and HND",
+                  "id": 33
+                }
+              }
+            },
+            "2": {
+              "title": "Interoperability Unit",
+              "id": 31,
+              "ideas": {
+                "1": {
+                  "title": "transform media format between HND and MHD",
+                  "id": 32,
+                  "ideas": {}
+                }
+              }
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#E0E0E0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "attr": {
+    "style": {
+      "background": "#22AAE0"
+    }
+  },
+  "links": [
+    {
+      "ideaIdFrom": 24,
+      "ideaIdTo": 20,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 11,
+      "ideaIdTo": 16,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 12,
+      "ideaIdTo": 17,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 71,
+      "ideaIdTo": 49,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    },
+    {
+      "ideaIdFrom": 21,
+      "ideaIdTo": 24,
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed"
+        }
+      }
+    }
+  ]
+}
